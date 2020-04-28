@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo do Christopher</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
-</head>
-
+<?php
+    $tituloDaPagina = "Curriculo do Christopher Govier";
+    require_once("./inc/head.php");
+?>
+<body>
+    <?php require_once("./inc/header.php"); ?>
+    <main class="container my-5">
 <body>
     <div class="grid">
         <div class="container">
@@ -46,10 +42,7 @@
         <aside>
             <h2>Cerificacoes</h2>
         </aside>
-        <footer>
-            <p>Christopher Govier<sup><small>&copy;</small></sup> | <a href="https://github.com/cgovier" target="_blank" rel="noopener" title="Acesse meu perfil no github"><i class="fab fa-github"></i></a> | <a href="https://www.linkedin.com/in/christopher-govier-28853111b/" target="_blank" rel="noopener" title="Acesse meu perfil no linkedin"><i class="fab fa-linkedin"></i></a> | <a href="mailto:chrisgovier@gmail.com?subject=Quero%20te%20contratar" title="Entre em contato comigo por email">chrisgovier@gmail.com</a> | São Paulo</p>
-        </footer>
+        <?php require_once("./inc/footer.php"); ?>
     </div>
 </body>
-
 </html>
