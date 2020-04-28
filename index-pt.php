@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="pt">
 <?php
     $tituloDaPagina = "Curriculo do Christopher Govier";
     require_once("./inc/head.php");

@@ -1,21 +1,23 @@
-/* Universal Resets*/
-*{
+Universal Resets * {
   margin: 0;
   font-family: Helvetica, sans-serif;
 }
+
 /* Containing Nav bar and Logo */
 .container {
-	width: 90%;
+  width: 90%;
   margin: 0 auto;
   grid-column: 1 / 4;
 }
-.grid{
+
+.grid {
   display: grid;
   width: 100vw;
   grid-template-columns: 1fr;
   grid-template-rows: 80px 700px 700px 700px 700px 70px;
 }
-.logo{
+
+.logo {
   grid-row: 1;
   grid-column: 2;
   float: left;
@@ -23,34 +25,40 @@
   width: fit-content;
   padding: 6px;
 }
+
 /* Styling the Nav Bar */
-nav{
+nav {
   grid-column: 1 / 2;
   grid-row: 1;
   justify-items: end;
   align-items: center;
   float: right;
 }
+
 nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 nav li {
   display: inline-block;
   margin-left: 70px;
   padding-top: 23px;
   position: relative;
 }
+
 nav a {
   color: #444;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
 }
+
 nav a:hover {
   color: #000;
 }
+
 nav a::before {
   content: '';
   display: block;
@@ -63,30 +71,38 @@ nav a::before {
 
   transition: all ease-in-out 250ms;
 }
+
 nav a:hover::before {
   width: 100%;
 }
-.menu{
+
+.menu {
   grid-column: 2;
   justify-items: end;
 }
+
 /* Structuring and Styling the content */
-header{
+header {
   grid-row: 2;
 }
-main{
+
+main {
   grid-row: 3;
 }
+
 section {
   grid-row: 4;
 }
-aside{
+
+aside {
   grid-row: 5;
 }
-footer{
+
+footer {
   grid-row: 6;
   grid-column: 1 / 2;
 }
+
 /*Creating a Timeline*/
 .timeline {
   list-style-type: none;
@@ -117,90 +133,109 @@ footer{
   height: 15px;
   width: 15px;
 }
+
 /* Styling text */
 h1 {
-font-size: 32px;
+  font-size: 32px;
 }
+
 h2 {
-font-size: 24px;
+  font-size: 24px;
 }
+
 p {
   font-size: 18px;
   line-height: auto;
 }
+
 /* MEDIA QUERIES */
 /* Nav Bar */
-@media screen and (max-width: 760px){
+@media screen and (max-width: 760px) {
   nav {
     display: none;
   }
 }
+
 /* For Desktop Screens */
 @media screen and (min-width: 768px) {
+
   /* Adjusting Nav Bar */
-  nav{
+  nav {
     grid-column: 1 / 4;
     grid-row: 1;
     justify-items: end;
     align-items: center;
     float: right;
   }
+
   nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
   }
+
   nav li {
     display: inline-block;
     margin-left: 70px;
     padding-top: 23px;
     position: relative;
   }
+
   nav a {
     color: #444;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
   }
+
   nav a:hover {
     color: #000;
   }
+
   nav a::before {
     content: '';
     display: block;
     height: 5px;
     background-color: #444;
-  
+
     position: absolute;
     top: 0;
     width: 0%;
-  
+
     transition: all ease-in-out 250ms;
   }
+
   nav a:hover::before {
     width: 100%;
   }
+
   /* Adjusting grid */
   .grid {
     grid-template-columns: 20vw 60vw 20vw;
   }
-  .logo{
+
+  .logo {
     align-items: left;
     text-align: left;
   }
+
   /* Adjusting content containers */
   header {
     grid-column: 2;
   }
+
   main {
     grid-column: 2;
   }
+
   section {
     grid-column: 2;
   }
+
   aside {
     grid-column: 2;
   }
+
   footer {
     grid-column: 1 / 4;
   }
