@@ -1,2 +1,2 @@
 # My-Curriculum-Vitae
-Aula 01 
+My CV updated and displaying Portfolio, Education, Certificates, Contact.
