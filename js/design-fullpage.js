@@ -3,7 +3,10 @@ TweenMax.defaultEase = Linear.easeOut;
 new fullpage("#fullpage", {
   //options here
   autoScrolling: true,
-  navigation: false,
+  controlArrows: true,
+  slidesNavPosition: 'bottom',
+  scrollBar: false,
+  controlArrowColor: '#fff',
   onLeave: (origin, destination, direction) => {
     const section = destination.item;
     const title = section.querySelector("h1");

@@ -10,21 +10,48 @@ header {
     font-family: 'Didact Gothic', sans-serif;
 }
 
+h1 {
+    color: #1D2126;
+}
+
+h2 {
+    color: #1D2126;
+}
+
 nav {
     position: absolute;
     left: 0px;
-    top: 5px;
+    top: 2%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2em;
+    font-size: 3vh;
     z-index: 3;
+    padding: 1%;
+    text-shadow: -1px 1px 10px rgba(165, 201, 206, 1);
+}
+
+nav:hover{
+    background-color: rgba(29, 33, 38, 0.9);
+    transition: 0.5s ease-in;
+    text-shadow: none;
+}
+
+nav a {
+    color: #6D4573;
+    text-decoration: none !important;
+}
+
+nav a:hover {
+    color: #ED5278;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
+    width: 90%;
+    justify-content: center;
     display: flex;
 }
 
@@ -33,12 +60,33 @@ nav ul {
 }
 
 .s1 {
-    background-image: url('https://github.com/cgovier/My-Curriculum-Vitae/blob/master/img%2Fchris.jpg');
+    background-image: url(../img/bg1.jpg);
     background-size: cover;
 }
 
-.section h1 {
+.chris {
+    position: absolute;
+    left: 1%;
+    bottom: -10%;
+    z-index: 1;
+    height: 100vh;
+}
 
+.section h1 {
+    z-index: 2;
+    font-size: 8vh;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    text-shadow: -5px 3px 15px #A5C9CE;
+}
+.section h2 {
+    z-index: 2;
+    font-size: 5vh;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    text-shadow: -5px 3px 15px #A5C9CE;
 }
 
 footer {
